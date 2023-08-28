@@ -1,5 +1,8 @@
 module.exports = ({ env }) => ({
   "vercel-deploy": {
-    enabled: true,
+        enabled: true,
+        config: {
+          apiToken: env('VERCEL_TOKEN'),
+      }
   },
 });
